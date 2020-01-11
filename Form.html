@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Checkout form</title>
+	
+	<style type="text/css">
+		{
+			margin: 0;
+			padding: 0;
+		}
+		#checkout_form {
+			background: linear-gradient(#b0b9fc,#bdb3ef, #2d2e64);
+			position: relative;
+			display: inline-block;			
+			height: 90%;
+			width: 700px;
+			
+		}
+
+		form {
+			width: 600px;
+			height: 80%;
+			margin: 5% auto;
+			
+			
+		}
+
+		h2 {
+			font-weight: normal;
+			padding: 15px 20px;
+			background: #f0f0f8;
+			font-family: Arial;
+		}
+
+       		 .container {
+        	
+			background: linear-gradient(#f9faff, #edecf2);
+       			   
+                            }
+
+		 input {
+
+			border-color: #eff0f3;
+			border-style: solid;
+			height: 30px;
+			width: 43%;
+			margin-left: 4%;
+			margin-right: 4%; 
+			margin-top: 2%;
+
+	     		}
+
+		button {
+
+			padding: 10px 20px;
+           	        background: #b95dca;
+                        color: white;
+                        border: none;
+			margin-left:75%;
+			margin-top:4%;  
+			margin-bottom: 4%;
+            
+			}
+
+
+	    label[for] {
+
+			margin-left:2px;
+		        
+ 		       }
+
+	::placeholder {
+
+			color: #b9b8b5;
+			font-weight: bold;
+			font-family: Arial;
+			padding-left: 5px;
+			vertical-align: text-top;
+		       
+ 		       }
+
+	     .column2 {
+			margin-left: 0;
+		
+		       }
+
+	hr:not(.first){
+			margin-top: 2%;
+			color: "#eff0f3";
+		
+		      }
+
+	     #country {
+			width: 33%;
+		      }
+
+		#city {
+			width: 30%;
+		      }
+
+	    #postCode {
+			width: 17%;
+		      }
+
+	     .fullRow {
+			width: 91%;
+		      }
+
+  input[type="radio"] {
+			width: 15px;
+			height: 15px;
+			background: #fff;
+		
+		       }
+		
+	     #add_row {
+			height: 60px;
+		      }
+
+	 #card_number {
+			width: 73%;
+		       }
+
+		#cvv2 {
+			width: 13%;
+			margin-right: 4%; 
+		      }
+
+	    #exp_date {
+			margin-left: 4%;
+			margin-right: 5%;
+		       }
+
+	#month, #year {
+			width: 28%;
+			margin-right:4%;
+		      }
+
+	</style>
+</head>
+
+<body>
+	<div id="checkout_form">
+		<form>
+			<h2>Checkout form</h2>
+			<hr class="first" color="#eff0f3">
+			<div class="container">
+			    <input type="text" name="first_name" placeholder="First Name" size="30%">
+			    <input class="column2" type="text" name="last_name" placeholder="Last Name" size="30%">
+			    <input type="email" name="email" placeholder="E-mail" size="30%">
+			    <input class="column2" type="text" name="phone" placeholder="Phone" size="30%">
+                            <hr color="#eff0f3">
+			    <input type="text" name="country" placeholder="Country" id="country">
+			    <input type="text" class="column2" name="city" placeholder="City" id="city">
+			    <input type="text" class="column2" name="postCode" placeholder="Post code" id="postCode" >
+			    <input type="text" name="address" placeholder="Address" class="fullRow">
+			    <input id="add_row" type="textarea" name="add_info" placeholder="Additional Info" class="fullRow">
+			    <hr color="#eff0f3">
+			    <input type="radio" name="card" id="visa"> <label for="visa">Visa</label>
+			    <input type="radio" name="card" id="master"><label for="master">MasterCard</label>
+			    <input type="radio" name="card" id="paypal"><label for="paypal">PayPal</label> <br>
+			    <input type="text" name="card_name" placeholder="Name on card" class="fullRow">
+			    <input type="text" id="card_number" name="card_number" placeholder="Card number">
+			    <input type="text" id="cvv2" class="column2" name="card_cvv2" maxlength="3"
+                                  placeholder="CVV2">
+			    <label id="exp_date">Expiration date</label>
+			
+			    <input list="month1" placeholder="Month" id="month">
+                            <datalist id="month1">
+                            <option value="Январь">
+                            <option value="Февраль">
+                            <option value="Март">	
+                            </datalist>
+			    <input type="text" name="year" placeholder="Year" id="year" class="column2">
+			    <hr color="#eff0f3">
+		      </div>
+			
+		      <div style="background: #e4e3e9;">
+				<button type="submit">Continue
+				</button>
+		      </div>
+
+		</form>
+
+	</div>
+</body>
+
+</html>
